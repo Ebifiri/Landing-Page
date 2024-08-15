@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fylo Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config={
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-blue': 'hsl(243, 87%, 12%)',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="px-20">
+        <div class = "navbar flex justify-between">
+            <section class = "logo p-10">
+                <img src="Design/fylo logo.png" width="100px" height="100px">
+            </section>
+            <section class = "items flex items-center">
+                <ul class = "flex space-x-10 text-dark-blue mx-10">
+                    <li>Features</li>
+                    <li>Team</li>
+                    <li>Sign In</li>
+                </ul>
+            </section>
+        </div>
+        <div class= "first_body flex items-center px-5">
+            <section class = "pb-20">
+                <h1 class = "text-dark-blue font-bold font-sans text-2xl px-20">All your files in one secure location, accessible <br> anywhere</h1>
+                <p class = "text-dark-blue text-lg px-20 py-5">Fylo stores your most important files in one secure location. <br>
+                     Access them wherever you need, share and collaborate with friends, family and co-workers.</p>
+                <form class = "email">
+                    <div class = "flex px-20 size-12">
+                        <input class="border border-gray-800 rounded font-sans px-5" placeholder="Enter your email">
+                        <button class="bg-blue-800 text-white px-10 rounded ml-2">Get Started</button>
+                    </div>
+                </form>
+            </section>
+            <section class = "image1">
+                <img src="Design/first.svg" width="80%">
+            </section>
+        </div>
+    </div>
+</body>
+</html>
