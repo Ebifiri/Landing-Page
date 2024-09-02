@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <script>
+        tailwind.config={
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-blue': 'hsl(243, 87%, 12%)',
+                        'desat-blue': 'hsl(238, 22%, 44%)',
+                        'bright-blue': 'hsl(224, 93%, 58%)',
+                        'light-gray' : 'hsl(0, 0%, 75%)',
+                        'gray-blue' : 'hsl(240, 75%, 98%)',
+                    },
+                    fontFamily: {
+                        'rale': ['Raleway', 'sans-serif'],
+                        'sans': ['Open Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="px-20 bg-gray-blue min-h-screen box-border w-full">
+        <div class="navbar flex justify-between">
+            <section class="logo p-10">
+                <img src="Design/fylo logo.png" class="w-[36] h-[36]">
+            </section>
+            <section class="items flex items-center">
+                <ul class="flex space-x-10 text-dark-blue mx-10 font-rale">
+                    <li>Features</li>
+                    <li>Team</li>
+                    <li>Sign In</li>
+                </ul>
+            </section>
+        </div>
+        <div class="first_body flex items-center px-5 py-20">
+            <section class="pb-20">
+                <h1 class="text-dark-blue font-bold font-rale text-4xl px-20">All your files in one secure <br> location, accessible anywhere</h1>
+                <p class="text-dark-blue text-lg px-20 py-5 font-sans">Fylo stores your most important files in one secure location. <br>
+                     Access them wherever you need, share and collaborate with friends, family and co-workers.</p>
+                <form class="email">
+                    <div class="flex px-20">
+                        <input type="email" class="border border-gray-800 rounded font-sans px-5 box-content w-72" placeholder="Enter your email...">
+                        <button class="bg-bright-blue text-white rounded ml-2 whitespace-nowrap box-content w-56 h-12 font-bold">Get Started</button>
+                    </div>
+                </form>
+            </section>
+            <section class="image1">
+                <img src="assets/illustration-1.svg" class="w-3/4 ml-28">
+            </section>
+        </div>
+        <div class="flex px-5 pt-20">
+            <section class="px-20">
+                <h1 class="text-dark-blue font-bold font-rale text-4xl pt-20">Stay productive wherever you are</h1>
+                <p class="text-dark-blue text-lg pt-5 font-sans">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.
+                <br> <br> Securely share files and folders with friends, family and colleagues for <br>
+                live collaboration. No email attachments required!</p>
+                <div class="flex">
+                    <p class="underline underline-offset-8 text-green-600 pt-5 font-sans">See how fylo works </p>
+                    <span><img src="assets/icon-arrow.svg" alt="arrow" class="w-5 pt-5 justify-around"></span>
+                </div>
+                <section class="rounded-lg text-blue shadow-2xl box-border h-64 w-96 mt-10 mb-36">
+                    <img src="assets/icon-quotes.svg" class="pt-10 pl-6">
+                    <p class="px-7 py-3 font-sans">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+                    <section class="h-14 flex pl-7 ">
+                        <img src="assets/avatar-testimonial.jpg" class="h-12 rounded-full">
+                        <section class="flex flex-col mx-4">
+                            <ul>
+                                <li class="font-bold text-lg font-sans">Kyle Burton</li>
+                                <li class="text-xs font-sans">Founder & CEO, Huddle</li>
+                            </ul>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="pt-20 ml-2">
+                <img src="assets/illustration-2.svg" width="80%">
+            </section>
+        </div>
+    </div>
+    <div class="flex bg-desat-blue h-80 w-full">
+        <section>
+            <h2 class="text-3xl font-bold text-white pt-28 px-40 font-rale">Get early access today</h2>
+            <p class="text-white pt-5 px-40 font-sans">It only takes a minute to sign up and our free starter tier is <br> extremely generous. 
+                If you have any questions, our support team <br> would be happy to help you.</p>
+        </section>
+        <section>
+            <form>
+                <section class="flex flex-col px-52">
+                    <input type="email" class="border mt-32 mb-5 p-3 rounded font-sans px-5 box-content w-[32rem] shadow-xl" placeholder="email@example.com">
+                    <button class="bg-bright-blue text-white rounded box-content w-60 h-12 shadow-xl whitespace-nowrap font-bold">Get Started For Free</button>
+                </section>
+            </form>
+        </section>
+    </div>
+    <div class="flex bg-dark-blue h-96 w-full">
+        <section>
+            <img src="assets/logo.svg" class="mt-28 px-40">
+            <section class="flex px-40 pt-8">
+                <img src="assets/icon-phone.svg" class="w-4 h-4 mt-1">
+                <p class="text-light-gray mx-5">Phone: +1-543-123-4567</p>
+            </section>
+            <section class="flex px-40 pt-4">
+                <img src="assets/icon-email.svg" class="w-5 h-4 mt-1">
+                <p class="text-light-gray mx-4">example@fylo.com</p>
+            </section>
+        </section>
+        <section>
+            <p class="text-light-gray ml-32 pt-48">About Us</p>
+            <p class="text-light-gray ml-32 pt-4">Jobs</p>
+            <p class="text-light-gray ml-32 pt-4">Press</p>
+            <p class="text-light-gray ml-32 pt-4">Blog</p>
+        </section>
+        <section>
+            <p class="text-light-gray ml-[420px] pt-48">Contact Us</p>
+            <p class="text-light-gray ml-[420px] pt-4">Terms</p>
+            <p class="text-light-gray ml-[420px] pt-4">Privacy</p>
+        </section>
+        <section class="flex">
+            <img src="assets/facebook use.png" class="w-8 h-8 mt-[190px] ml-[420px]">
+            <img src="assets/Twitter.png" class="w-8 h-8 mt-[190px] ml-3">
+            <img src="assets/instagram-235.png" class="w-8 h-8 mt-[190px] ml-3">
+        </section>
+    </div>
+</body>
+</html>
